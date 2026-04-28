@@ -1,0 +1,57 @@
+/* Fonts */
+@font-face {
+  font-family: Open-Sans-Reg;
+  src: url();
+}
+@font-face {
+  font-family: Open-Sans-Med;
+  src: url();
+}
+@font-face {
+  font-family: Open-Sans-Bold;
+  src: url();
+}
+@font-face {
+  font-family: GreatVibes;
+  src: url();
+}
+@font-face {
+  font-family: FranklinGothicHeavy;
+  src: url();
+}
+/* :root */
+:root {
+  /* Fonts */
+  --sans-r: Open-Sans-Reg;
+  --sans-m: Open-Sans-Med;
+  --sans-b: Open-Sans-Bold;
+  --coder: GreatVibes;
+  --designer: FranklinGothicHeavy;
+  /* Colors */
+  --white: #ffffff;
+  --white-transparent: #ffffffcc;
+  --light-gray: #f2f2f2;
+  --light-gray-transparent: #ffffff99;
+  --black: #000000;
+  --gray: #272727;
+  --green: #d0dfc4;
+  --gradient: #d7e5cb, #e7eee1;
+}
+
+/* Static components */
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
