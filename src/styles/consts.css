@@ -32,10 +32,12 @@
   --white-transparent: #ffffffcc;
   --light-gray: #f2f2f2;
   --light-gray-transparent: #ffffff99;
+  --semi-light-gray: #f3f3f3;
   --black: #000000;
   --gray: #272727;
   --green: #d0dfc4;
   --gradient: #d7e5cb, #e7eee1;
+  --category: #5a5a5a;
 }
 
 /* Static components */
