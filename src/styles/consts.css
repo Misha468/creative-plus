@@ -1,23 +1,23 @@
 /* Fonts */
 @font-face {
   font-family: Open-Sans-Reg;
-  src: url();
+  src: url(../static/fonts/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: Open-Sans-Med;
-  src: url();
+  src: url(../static/fonts/OpenSans-Medium.ttf);
 }
 @font-face {
   font-family: Open-Sans-Bold;
-  src: url();
+  src: url(../static/fonts/OpenSans-Bold.ttf);
 }
 @font-face {
   font-family: GreatVibes;
-  src: url();
+  src: url(../static/fonts/GreatVibes.ttf);
 }
 @font-face {
   font-family: FranklinGothicHeavy;
-  src: url();
+  src: url(../static/fonts/FranklinGothicHeavy.ttf);
 }
 /* :root */
 :root {
@@ -38,6 +38,7 @@
   --green: #d0dfc4;
   --gradient: #d7e5cb, #e7eee1;
   --category: #5a5a5a;
+  --phone: #f0f0f0;
 }
 
 /* Static components */
@@ -56,4 +57,48 @@ body,
 #root {
   width: 100%;
   height: 100%;
+}
+.buttons {
+  padding: 16px 32px;
+  border-radius: 70px;
+  background-color: var(--gray);
+  color: var(--white);
+}
+#to-contact-button {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  align-items: center;
+  font-family: var(--sans-b);
+  font-size: 18px;
+}
+#logo-image {
+  width: 50px;
+}
+.header-navigation-element {
+  font-family: var(--sans-r);
+  color: var(--gray);
+  font-size: 18px;
+  text-transform: lowercase;
+  transition: all 0.5s ease;
+}
+.header-navigation-element:hover {
+  transform: translateY(-2px);
+}
+#header-phone-link {
+  font-family: var(--sans-r);
+  color: var(--phone);
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 70px;
+  background-color: var(--gray);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.active {
+  border-bottom: 1px var(--black) solid;
+}
+#header-phone-link:hover {
+  color: var(--green);
+  scale: 1.05;
 }

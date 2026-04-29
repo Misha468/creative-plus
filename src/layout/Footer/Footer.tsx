@@ -12,7 +12,7 @@ export default function Footer() {
               key={item.id}
               to={item.url}
               className={({ isActive }) =>
-                `footerNavigationElement ${isActive ? "Active" : ""}`
+                `footer-navigation-element ${isActive ? "active" : ""}`
               }
             >
               {item.title}
