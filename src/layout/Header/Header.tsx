@@ -1,5 +1,5 @@
 import Navigation from "./components/navigation";
-import HeaderBackground from "../../static/images/thesis-background.png";
+import HeaderBackground from "../../static/images/landing-background.png";
 import StatisticIcon from "../../static/images/statistic.png";
 import ArrorIcon from "../../static/icons/arrow-right.png";
 import { NavLink } from "react-router-dom";
@@ -8,7 +8,13 @@ export default function Header() {
   return (
     <header>
       <Navigation />
+      {/* Header background */}
       <aside id="header-background-wrapper">
+        <img
+          src={HeaderBackground}
+          alt="Задний фон шапки сайта"
+          id="header-background-image"
+        />
         <div id="header-inner-background">
           <section id="header-inner-background-left-side">
             <p className="header-thesis-title">
@@ -50,12 +56,6 @@ export default function Header() {
             </div>
           </section>
         </div>
-        {/* Header background */}
-        <img
-          src={HeaderBackground}
-          alt="Задний фон шапки сайта"
-          id="header-background-image"
-        />
       </aside>
     </header>
   );

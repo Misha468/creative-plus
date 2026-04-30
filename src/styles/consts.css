@@ -8,6 +8,10 @@
   src: url(../static/fonts/OpenSans-Medium.ttf);
 }
 @font-face {
+  font-family: Open-Sans-Semi-Bold;
+  src: url(../static/fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
   font-family: Open-Sans-Bold;
   src: url(../static/fonts/OpenSans-Bold.ttf);
 }
@@ -19,26 +23,38 @@
   font-family: FranklinGothicHeavy;
   src: url(../static/fonts/FranklinGothicHeavy.ttf);
 }
+@font-face {
+  font-family: Jakarta;
+  src: url(../static/fonts/PlusJakartaSans-Bold.ttf);
+}
 /* :root */
 :root {
   /* Fonts */
   --sans-r: Open-Sans-Reg;
   --sans-m: Open-Sans-Med;
+  --sans-sb: Open-Sans-Semi-Bold;
   --sans-b: Open-Sans-Bold;
   --coder: GreatVibes;
   --designer: FranklinGothicHeavy;
+  --jakarta: Jakarta;
   /* Colors */
   --white: #ffffff;
   --white-transparent: #ffffffcc;
+  --custom-white: #fefefe;
   --light-gray: #f2f2f2;
   --light-gray-transparent: #ffffff99;
+  --custom-light-gray: #d9d9d9;
   --semi-light-gray: #f3f3f3;
+  --custom-gray: #5c5d5f;
   --black: #000000;
+  --custom-black: #010205;
   --gray: #272727;
+  --dark-gray: #171717;
   --green: #d0dfc4;
   --gradient: #d7e5cb, #e7eee1;
   --category: #5a5a5a;
   --phone: #f0f0f0;
+  --navigation-gradient: #d9d9d9, #d9d9d9ce, #d9d9d993, #d9d9d900;
 }
 
 /* Static components */
@@ -101,4 +117,63 @@ body,
 #header-phone-link:hover {
   color: var(--green);
   scale: 1.05;
+}
+.header-thesis-title {
+  font-family: var(--sans-b);
+  font-size: 48px;
+  color: var(--dark-gray);
+}
+#header-company-fact {
+  background-color: var(--custom-white);
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.company-fact-title {
+  color: var(--custom-black);
+  font-size: 100px;
+  line-height: 100px;
+  font-family: var(--jakarta);
+}
+.company-fact-text {
+  font-family: var(--sans-m);
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--custom-gray);
+}
+#line-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+}
+#black-line {
+  width: 70%;
+  height: 7.5px;
+  background-color: var(--black);
+}
+#gray-line {
+  width: 30%;
+  height: 7.5px;
+  background-color: var(--custom-light-gray);
+}
+.header-thesis-text {
+  font-family: var(--sans-m);
+  color: var(--black);
+  font-size: 18px;
+}
+#header-thesis-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.links {
+  font-size: 16px;
+  font-family: var(--sans-sb);
+  color: var(--custom-black);
 }

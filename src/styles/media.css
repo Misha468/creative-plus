@@ -4,6 +4,11 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 0px;
+    background: linear-gradient(var(--navigation-gradient));
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
   }
   #logo-wrapper,
   #header-phone-wrapper {
@@ -20,6 +25,41 @@
   }
   #header-navigation-menu {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header-background-image {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    top: 0;
+  }
+  #header-inner-background {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    height: max-content;
+    position: relative;
+  }
+  #header-background-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header-inner-background-left-side,
+  #header-inner-background-right-side {
+    width: 42.5%;
+  }
+  #header-inner-background-right-side {
     display: flex;
     justify-content: space-between;
     align-items: center;
