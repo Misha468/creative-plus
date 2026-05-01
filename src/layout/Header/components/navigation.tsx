@@ -21,7 +21,7 @@ export default function Navigation() {
         ))}
       </section>
       <section id="header-phone-wrapper">
-        <p id="header-phone-link">+7(4842) 75-19-06</p>
+        <p id="header-phone-link">+7 (4842) 75-19-06</p>
       </section>
     </aside>
   );

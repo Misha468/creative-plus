@@ -24,7 +24,7 @@
     align-items: center;
   }
   #header-navigation-menu {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,11 @@
   #header-inner-background-left-side,
   #header-inner-background-right-side {
     width: 42.5%;
+  }
+  #header-inner-background-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
   #header-inner-background-right-side {
     display: flex;
