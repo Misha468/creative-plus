@@ -125,4 +125,29 @@
     z-index: -1;
     top: 0;
   }
+  #top-footer-part {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+  }
+  #footer-navigation-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #top-footer-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  #footer-socials-wrapper {
+    display: flex;
+    gap: 25px;
+  }
 }
