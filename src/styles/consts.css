@@ -421,3 +421,66 @@ footer {
 .footer-navigation-element:hover {
   scale: 1.05;
 }
+.leaflet-control-attribution {
+  display: none;
+}
+.leaflet-container {
+  height: 100%;
+}
+.leaflet-control-zoom-in span,
+.leaflet-control-zoom-out span,
+.leaflet-popup-close-button span,
+.leaflet-tooltip {
+  color: var(--gray);
+  font-family: var(--sans-r);
+}
+.leaflet-popup-content {
+  color: var(--gray);
+  font-family: var(--sans-r);
+}
+#leaflet-map-wrapper {
+  width: 90%;
+  height: 500px;
+}
+.contacts-page-title {
+  width: 90%;
+  font-family: var(--sans-m);
+  color: var(--gray);
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.contacts-info-page-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contacts-info-page-element {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.contacts-info-page-title {
+  font-size: 35px;
+  font-family: var(--sans-r);
+  color: var(--category);
+  text-transform: uppercase;
+}
+.contacts-info-page-link {
+  font-size: 45px;
+  font-family: var(--sans-r);
+  color: var(--gray);
+  transition: all 0.5s ease;
+  width: max-content;
+}
+.contacts-info-page-link:hover {
+  transform: translateY(-2px);
+}
+#contact-page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 100px 0;
+}
