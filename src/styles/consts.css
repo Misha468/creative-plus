@@ -195,3 +195,108 @@ body,
   width: 100%;
   height: 100px;
 }
+/* Carousel */
+.infinite-carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.infinite-track {
+  width: 96%;
+  display: flex;
+  gap: 50px;
+  white-space: nowrap;
+}
+.carousel-word {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--black);
+  font-family: var(--sans-r);
+}
+main {
+  width: 100%;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.about-company-title {
+  font-family: var(--sans-m);
+  font-size: 48px;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+}
+.about-company-text {
+  font-size: 30px;
+  color: var(--gray);
+  font-family: var(--sans-r);
+  text-align: justify;
+}
+.about-company-special-text {
+  font-family: var(--sans-b);
+  text-transform: uppercase;
+}
+.about-company-thesis-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: var(--sans-b);
+  color: var(--gray);
+}
+.about-company-thesis-text {
+  font-size: 30px;
+  font-family: var(--sans-r);
+  color: var(--gray);
+  text-align: justify;
+}
+#about-company-left-side {
+  background-color: var(--semi-light-gray);
+  border-radius: 15px;
+  padding: 25px 50px;
+}
+.about-specialize-text {
+  font-family: var(--sans-r);
+  font-size: 22px;
+  color: var(--light-gray);
+  background-color: var(--gray);
+  border-radius: 45px;
+  padding: 15px 40px;
+}
+#about-specialize-wrapper {
+  display: flex;
+  row-gap: 25px;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+}
+.our-values-title {
+  font-family: var(--sans-r);
+  font-size: 22px;
+  color: var(--light-gray);
+  background-color: var(--gray);
+  border-radius: 45px;
+  padding: 5px 0;
+  text-transform: lowercase;
+  width: 75%;
+  text-align: center;
+}
+.our-values-wrapper-title {
+  font-size: 48px;
+  font-family: var(--sans-m);
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+.thesis-info-text {
+  font-size: 35px;
+  color: var(--gray);
+  font-family: var(--sans-sb);
+  text-align: center;
+  max-width: 65%;
+}
+.thesis-info-special-text {
+  font-size: 49px;
+  font-weight: normal;
+}
