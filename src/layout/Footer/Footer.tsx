@@ -12,18 +12,21 @@ export default function Footer() {
         <section id="top-footer-left-side">
           <p className="top-footer-left-side-title">Контакты</p>
           <div id="footer-contacts-wrapper">
-            {ContactsList.map((contact) => (
-              <div key={contact.id} className="footer-contact-element">
-                <img
-                  src={contact.icon}
-                  alt={contact.title}
-                  className={contact.styles}
-                />
-                <a className="footer-social-link" href={contact.url}>
-                  {contact.text}
-                </a>
-              </div>
-            ))}
+            {ContactsList.map(
+              (contact) =>
+                contact.footerVisible && (
+                  <div key={contact.id} className="footer-contact-element">
+                    <img
+                      src={contact.icon}
+                      alt={contact.title}
+                      className={contact.styles}
+                    />
+                    <a className="footer-social-link" href={contact.url}>
+                      {contact.text}
+                    </a>
+                  </div>
+                ),
+            )}
           </div>
           <div id="footer-socials-wrapper">
             {SocialsList.map((social) => (
