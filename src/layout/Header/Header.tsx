@@ -1,6 +1,5 @@
 import Navigation from "./components/navigation";
 import HeaderBackground from "../../static/images/landing-background.png";
-
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import RightSideHeader from "./components/rightSideHeader";

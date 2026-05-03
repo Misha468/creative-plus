@@ -1,19 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { FilterButtonsList } from "../../lists/FilterButtons";
 import { PortfolioList } from "../../lists/Portfolio";
-
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState<string>("Все");
   const containerRef = useRef<HTMLDivElement>(null);
   const [isScrollable, setIsScrollable] = useState(false);
-
-  // Фильтрация изображений
   const filteredImages =
     activeFilter === "Все"
       ? PortfolioList
       : PortfolioList.filter((item) => item.type === activeFilter);
-
-  // Проверка на скролл
   useEffect(() => {
     const checkScroll = () => {
       if (containerRef.current) {
@@ -26,7 +21,6 @@ export default function Portfolio() {
     window.addEventListener("resize", checkScroll);
     return () => window.removeEventListener("resize", checkScroll);
   }, [filteredImages]);
-
   return (
     <main>
       <div id="portfolio-page-wrapper">
