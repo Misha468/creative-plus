@@ -156,6 +156,7 @@
     justify-content: center;
     overflow: hidden;
     object-fit: contain;
+    margin: 50px 0;
   }
   .clients-swiper {
     width: 90%;
@@ -183,5 +184,19 @@
     display: flex;
     justify-content: space-between;
     margin: 100px 0;
+  }
+  #category-wrapper,
+  #services-list-wrapper,
+  #faq-block-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  #category-list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
   }
 }
