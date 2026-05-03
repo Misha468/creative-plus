@@ -187,7 +187,8 @@
   }
   #category-wrapper,
   #services-list-wrapper,
-  #faq-block-wrapper {
+  #faq-block-wrapper,
+  #portfolio-page-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
