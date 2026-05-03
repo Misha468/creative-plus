@@ -203,6 +203,9 @@
   #header-phone-icon-wrapper {
     display: none;
   }
+  #header-navigation-button {
+    display: none;
+  }
 }
 @media screen and (max-width: 1850px) {
   #thesis-info-block-logo {
