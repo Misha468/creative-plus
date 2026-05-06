@@ -281,6 +281,11 @@
   .review-inner-block {
     width: 85%;
   }
+  #category-list-wrapper {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1350px) {
   #header-statistic-icon {
@@ -424,6 +429,27 @@
   }
   #leave-feedback-wrapper {
     width: 90%;
+  }
+  .faq-element-title,
+  .services-types-list-element {
+    font-size: 20px;
+  }
+  .faq-element-text {
+    font-size: 16px;
+  }
+  .services-types-block-title,
+  .services-page-title,
+  .category-list-title {
+    font-size: 24px;
+  }
+  .category-list-title {
+    text-align: center;
+  }
+  .category-list-image {
+    width: 250px;
+  }
+  .faq-element-text {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
