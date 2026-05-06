@@ -251,6 +251,11 @@
   .about-specialize-text {
     font-size: 16px;
   }
+  #filters-wrapper {
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1400px) {
   #header-phone-icon-wrapper {
@@ -403,7 +408,8 @@
 @media screen and (max-width: 450px) {
   .contacts-info-page-link,
   .top-footer-left-side-title,
-  .contacts-page-title {
+  .contacts-page-title,
+  .portfolio-page-title {
     font-size: 24px;
   }
   .footer-social-link {
