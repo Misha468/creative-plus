@@ -33,7 +33,11 @@ export default function Landing() {
             Воплощаем ваши идеи
             <b className="thesis-info-special-text"> в реальность!</b>
           </p>
-          <NavLink to={"/контакты"} className="buttons" id="to-contact-button">
+          <NavLink
+            to={"/контакты"}
+            className="buttons"
+            id="landing-to-contact-button"
+          >
             Контакты
             <img src={ArrorIcon} alt="Иконка стрелочки" />
           </NavLink>

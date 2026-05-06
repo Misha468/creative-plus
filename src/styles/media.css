@@ -105,11 +105,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 480px;
+    padding: 50px 0;
+  }
+  #thesis-block-image {
+    height: 100%;
   }
   #thesis-info-block {
     width: 40%;
-    height: 90%;
+    padding: 50px 0;
     margin-left: 1%;
     background-color: var(--light-gray-transparent);
     border-radius: 15px;
@@ -216,9 +219,6 @@
   }
   .thesis-info-special-text {
     font-size: 32px;
-  }
-  #thesis-block-wrapper {
-    max-height: 350px;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -413,6 +413,16 @@
   .review-block-text {
     font-size: 20px;
   }
+  #thesis-info-block {
+    width: 70%;
+  }
+  #header-inner-background-right-side {
+    display: none;
+  }
+  #header-inner-background-left-side {
+    width: 90%;
+    gap: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .review-inner-block,
@@ -420,6 +430,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .header-thesis-title {
+    font-size: 24px;
+  }
+  .header-thesis-title {
+    font-size: 16px;
   }
   .review-block-mirrored {
     justify-content: flex-start;
@@ -451,13 +467,47 @@
   .faq-element-text {
     max-width: 100%;
   }
+  #thesis-block-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  #thesis-info-block-logo {
+    width: 40px;
+  }
+  .thesis-info-text {
+    font-size: 16px;
+  }
+  .thesis-info-special-text {
+    font-size: 20px;
+  }
+  #thesis-block-wrapper {
+    padding: 10px 0;
+  }
+  #thesis-info-block {
+    padding: 10px 0;
+  }
+  #landing-to-contact-button,
+  #to-contact-button {
+    padding: 5px 16px;
+    text-transform: lowercase;
+  }
+  #to-contact-button {
+    padding: 10px 25px;
+  }
+  #about-company-left-side {
+    width: 90%;
+  }
+  #about-company-right-side {
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   .contacts-info-page-link {
     font-size: 32px;
   }
   .contacts-info-page-title,
-  .reviews-page-title {
+  .reviews-page-title,
+  .our-values-wrapper-title {
     font-size: 24px;
   }
   .contacts-page-title,
@@ -500,6 +550,36 @@
   .review-inner-block {
     padding: 25px;
   }
+  .about-company-title,
+  .about-specialize-text {
+    text-align: center;
+  }
+  #about-specialize-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-company-text,
+  .about-company-thesis-text,
+  .about-company-thesis-title {
+    font-size: 16px;
+  }
+  .about-company-thesis-title {
+    text-align: center;
+  }
+  #header-inner-background {
+    margin-top: 50px;
+    height: 100%;
+  }
+  #header-background-image {
+    height: 320px;
+    width: 100%;
+  }
+  .links {
+    font-size: 12px;
+  }
+  .header-thesis-text {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   .contacts-info-page-link,
@@ -508,11 +588,27 @@
   .portfolio-page-title {
     font-size: 24px;
   }
+  .header-thesis-title {
+    text-align: center;
+  }
+  .carousel-word {
+    font-size: 16px;
+  }
   .footer-social-link {
     font-size: 12px;
   }
   #dmitrieshkin,
   #lith {
     font-size: 16px;
+  }
+  .our-values-image {
+    width: 300px;
+  }
+  .header-thesis-text {
+    font-size: 12px;
+  }
+  #header-thesis-buttons-wrapper {
+    flex-direction: column;
+    gap: 15px;
   }
 }
