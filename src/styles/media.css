@@ -235,6 +235,9 @@
     width: auto;
     gap: 100px;
   }
+  #feeback-inner-wrapper {
+    gap: 25px;
+  }
 }
 @media screen and (max-width: 1500px) {
   #about-company-image {
@@ -275,6 +278,9 @@
   #about-specialize-wrapper {
     width: 90%;
   }
+  .review-inner-block {
+    width: 85%;
+  }
 }
 @media screen and (max-width: 1350px) {
   #header-statistic-icon {
@@ -303,10 +309,41 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 1200px) {
-  .review-block-image {
+@media screen and (max-width: 1250px) {
+  .review-block-image,
+  .review-block-mirrored .review-inner-block img {
     width: 250px;
     height: 250px;
+  }
+  .leave-feedback-title {
+    font-size: 28px;
+  }
+  .leave-feedback-text {
+    font-size: 20px;
+  }
+  .feedback-infographic-image {
+    width: 200px;
+  }
+  .feedback-image {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .review-block-image,
+  .review-block-mirrored .review-inner-block img {
+    width: 250px;
+    height: 250px;
+  }
+  .review-inner-block {
+    width: 95%;
+  }
+  #leave-feedback-wrapper {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .review-inner-block {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -363,12 +400,38 @@
   .active {
     border-color: var(--white);
   }
+  .review-block-image,
+  .review-block-mirrored .review-inner-block img {
+    width: 150px;
+    height: 150px;
+  }
+  .review-block-text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .review-inner-block,
+  .review-block-mirrored .review-inner-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-block-mirrored {
+    justify-content: flex-start;
+  }
+  .feedback-image {
+    display: none;
+  }
+  #leave-feedback-wrapper {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   .contacts-info-page-link {
     font-size: 32px;
   }
-  .contacts-info-page-title {
+  .contacts-info-page-title,
+  .reviews-page-title {
     font-size: 24px;
   }
   .contacts-page-title,
@@ -403,6 +466,13 @@
   .footer-social-element.hovered {
     max-width: 40px !important;
     padding-right: 8px !important;
+  }
+  #feedback-infographics-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .review-inner-block {
+    padding: 25px;
   }
 }
 @media screen and (max-width: 450px) {
