@@ -1,4 +1,5 @@
 import AboutImage from "../../../static/images/landing-about.png";
+import FactsBlock from "../../../static/images/facts-block.png";
 export default function AboutCompany() {
   return (
     <aside id="about-company-wrapper">
@@ -10,12 +11,7 @@ export default function AboutCompany() {
           на:
         </p>
         <div id="about-specialize-wrapper">
-          <p className="about-specialize-text">дизайне</p>
-          <p className="about-specialize-text">
-            собственном производстве наружной рекламы
-          </p>
-          <p className="about-specialize-text">изготовлении бизнес-сувениров</p>
-          <p className="about-specialize-text">печатной продукции</p>
+          <img src={FactsBlock} alt="Факты о компании" />
         </div>
         <p className="about-company-thesis-text">
           Мы создаем качественные подарки и рекламные материалы, чтобы помочь

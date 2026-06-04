@@ -275,6 +275,9 @@ main {
   justify-content: space-between;
   width: 75%;
 }
+#about-specialize-wrapper img {
+  width: 100%;
+}
 .our-values-title {
   font-family: var(--sans-r);
   font-size: 22px;
