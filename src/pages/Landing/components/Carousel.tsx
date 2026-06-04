@@ -6,6 +6,11 @@ const baseWords = [
   "РЕКЛАМА",
   "ПОЛИГРАФИЯ",
   "СУВЕНИРЫ",
+  "КРЕАТИВ ПЛЮС",
+  "ДИЗАЙН",
+  "РЕКЛАМА",
+  "ПОЛИГРАФИЯ",
+  "СУВЕНИРЫ",
 ];
 
 export default function InfiniteWordsCarousel() {
